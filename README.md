@@ -23,20 +23,19 @@ var view = Backbone.AdvicesView.extend({
 
   afterAdvices: ['handleErrors'],
 
-
+  // Methods
   render: function() {
     // Render Logic
     console.log('render');
   },
 
   // Advices
-
   getData: function() {
     console.log('getData');
   }
 
   handleErrors: function() {
-    console.log('getData');
+    console.log('handleErrors');
   }
 
 
