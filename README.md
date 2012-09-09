@@ -38,8 +38,5 @@ var view = Backbone.AdvicesView.extend({
     console.log('handleErrors');
   }
 
-
-
-
 });
 ```
