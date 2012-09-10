@@ -13,7 +13,7 @@ The best way to describe backbone.advices, is by showing this example:
 var view = Backbone.AdvicesView.extend({
 
   // Syntax 1
-  beforeAdvices: ['ensureQuerystrings'], // -> Getting called after all methods.
+  beforeAdvices: ['ensureQuerystrings'], // -> Getting called before all methods.
 
   // Syntax 2
   beforeAdvices: [{
@@ -21,8 +21,8 @@ var view = Backbone.AdvicesView.extend({
     'getData' : { except : ['render'] } // -> Getting called after all methods except render-method.
   }],
 
-  afterAdvices: ['handleErrors'],
-
+  afterAdvices: ['handleErrors'], // -> Getting called after all methods.
+ 
   // Methods
   render: function() {
     // Render Logic
